@@ -18,6 +18,7 @@ byte buttonState = 0;         // per guardar l’estat en que és troba el butto
 //********** Setup ****************************************************************
 void setup()
 {
+  Serial.begin(9600);
   pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
   pinMode(led1, OUTPUT);     // definir el pin 6 com una sortida
   pinMode(led2, OUTPUT);     // definir el pin 7 com una sortida
@@ -37,6 +38,7 @@ void loop()
   // Comprovar si el botó està premut
   if (buttonState == LOW)
   { 
+    Serial.println("polsador premut");
     digitalWrite(led0, HIGH);    // posar a 5V el pin 5
     digitalWrite(led1, HIGH);    // posar a 5V el pin 6
     digitalWrite(led2, HIGH);    // posar a 5V el pin 7
@@ -60,7 +62,8 @@ void loop()
     delay(50);                  // es queden leds 500ms apagats
   }
   else // Si el botó no està premut
-{
+{ 
+  Serial.println("polsador no premut");
   digitalWrite(led0, HIGH);    // posar a 5V el pin 5
   digitalWrite(led1, LOW);     // posar a 0V el pin 6
   digitalWrite(led2, HIGH);    // posar a 5V el pin 7

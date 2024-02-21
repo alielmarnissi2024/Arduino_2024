@@ -13,7 +13,7 @@ const byte led4 = 9;
 const byte led5 = 10;
 const byte led6 = 11;
 const byte led7 = 12;
-unsigned long temps = 30;
+unsigned long temps = 150;
 
 void setup() {
   pinMode(led0, OUTPUT);

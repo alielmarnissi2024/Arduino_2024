@@ -11,7 +11,8 @@ void setup()
 {
  
   pinMode(led0, OUTPUT);
-  while(i<30) {
+  while(i<30) 
+  {
   digitalWrite(led0, HIGH);
   delay(200);
   digitalWrite(led0,LOW);
