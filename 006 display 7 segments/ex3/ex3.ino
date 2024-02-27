@@ -8,7 +8,7 @@ const int G = 8;
 int i = 0;
 const byte buttonPin = 9;
 int buttonState = 0;
-int play = 0;
+bool play = 0;
 
 void setup() {
   pinMode(A, OUTPUT);
