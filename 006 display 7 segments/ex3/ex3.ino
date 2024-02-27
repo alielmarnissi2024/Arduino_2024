@@ -7,8 +7,8 @@ const int F = 7;
 const int G = 8; 
 int i = 0;
 const byte buttonPin = 9;
-int buttonState = 0;
-bool play = 0;
+bool buttonState = 0;
+int play = 0;
 
 void setup() {
   pinMode(A, OUTPUT);
@@ -19,6 +19,7 @@ void setup() {
   pinMode(F, OUTPUT);
   pinMode(G, OUTPUT);
   pinMode(buttonPin, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -126,14 +127,25 @@ void loop() {
   }
 
   if(buttonState == LOW) {
-    play = !play;
+    play = play+1;
     delay(200);
+    //Serial.println(play,HEX);
+    if (play==4)
+    {
+      play=0;
+    }
   }
-
+   if(play == 2) { 
+    i = i - 1;
+    if(i < 0) {
+    i = 9;
+  }
+  }
   if(play == 0) { 
     i = i + 1;
-  }
-  if(i > 9) {
+    if(i > 9) {
     i = 0;
   }
+  }
+  
 }
