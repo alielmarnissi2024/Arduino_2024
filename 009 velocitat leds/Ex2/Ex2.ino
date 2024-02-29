@@ -8,7 +8,7 @@ const byte led6 = 11;
 const byte led7 = 12;
 const byte pot0 = A0;
 
-unsigned long velocitat = 20;
+unsigned long velocitat = 10;
 int valPot0;
 
 void setup()
