@@ -5,14 +5,12 @@
 **********************************************************************************/
 //********** Includes *************************************************************
 //********** Variables ************************************************************
-const byte led0 = 5;          // donar nom al pin 5 de l’Arduino
-const byte led1 = 6;          // donar nom al pin 6 de l’Arduino
-const byte led2 = 7;          // donar nom al pin 7 de l’Arduino
-const byte led3 = 8;          // donar nom al pin 8 de l’Arduino
-const byte led4 = 9;          // donar nom al pin 9 de l’Arduino
-const byte led5 = 10;         // donar nom al pin 10 de l’Arduino
-const byte led6 = 11;         // donar nom al pin 11 de l’Arduino
-const byte led7 = 12;         // donar nom al pin 12 de l’Arduino
+const byte led0 = 3;          // donar nom al pin 3 de l’Arduino
+const byte led1 = 5;          // donar nom al pin 5 de l’Arduino
+const byte led2 = 6;          // donar nom al pin 6 de l’Arduino
+const byte led3 = 9;          // donar nom al pin 9 de l’Arduino
+const byte led4 = 10;         // donar nom al pin 10 de l’Arduino
+const byte led5 = 11;         // donar nom al pin 11 de l’Arduino
 const byte buttonPin = 2;     // donar nom al pin 2 de l’Arduino
 byte buttonState = 0;         // per guardar l’estat en que és troba el button
 //********** Setup ****************************************************************
